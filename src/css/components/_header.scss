@@ -1,0 +1,113 @@
+.header {
+  min-width: 1440px;
+  min-height: 586px;
+  background: $color-headerBody;
+  &__navbar {
+    position: relative;
+    display: flex;
+    width: 1175px;
+    top: 35px;
+    justify-content: space-between;
+  };
+  &__list {
+    display: flex;
+    gap: 30px;
+  };
+  &__item {
+    list-style-type: none;
+  };
+  .navbar__title,
+  &__link {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    text-decoration: none;
+    color: $color-white;
+  };
+  &__link:hover {
+    color: beige;
+  }
+  &__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1180px;
+    height: 378px;
+    top: 125px;
+    left: 250px;
+    gap: 120px;
+  }
+  &__body {
+    width: 416px;
+    height: 299px;
+    gap: 25px;
+  }
+  &__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: $color-white;
+    top: 25px;
+  }
+  &__copy {
+    color: $color-white;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    opacity: 0.6;
+  }
+  &__title {
+    color: $color-white;
+    font-family: Crimson Text;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  &__subtitle {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $color-white;
+  }
+  .navbar {
+    &__logo {
+      display: flex;
+      width: 187px;
+      gap: 18px;
+    }
+    &__image {
+      width: 70px;
+      height: 48.31px;
+    }
+    &__title {
+      font-family: Work Sans;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 50px;
+      text-align: left;
+    };
+  };
+};
+

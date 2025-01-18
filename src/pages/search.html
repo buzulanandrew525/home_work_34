@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell car</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a class="header__title" href="../index.html">
+                AkenAuto
+                <img src="../images/icon-car.png" alt="icon-car" class="header__title-icon">
+            </a>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">
+                        Каталог
+                    </a>
+                </li>               
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        Пошук
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="login_of_office.html" class="nav__link">
+                        Вхід до кабінету
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="register.html" class="nav__link">
+                        Регистрація
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="filter">
+            <div class="filter__title">
+                Пошук:
+            </div>
+            <form action="https://fom.in.ua/echo" method="get" id="selection-form" class="filter-window__item">
+                <div class="filter__block">
+                    <div class="filter-item">
+                        <div class="filter-title">Кузов:</div>
+                        <div class="filter-value">
+                            <select name="car_body" class="filter-value__car-body">
+                                <option value="Будь-яка">Будь-який</option>
+                                <option value="Sedan">Седан</option>
+                                <option value="Coupe">Купе</option>
+                                <option value="SUV">Внедорожник </option>
+                                <option value="Station_wagon">Универсал</option>
+                                <option value="Cabriolet">Кабриолет</option>
+                                <option value="Pickup">Пикап</option>
+                            </select>
+                        </div>
+                    </div>       
+                    <div class="filter-item">
+                        <div class="filter-title">Марка:</div>
+                        <div class="filter-value">
+                            <select name="model" class="filter-value__chooser">
+                                <option value="Будь-яка">Будь-яка</option>
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Cadillac">Cadillac</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Citroen">Citroen</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Fiat">Fiat</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Haval">Haval</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Infiniti">Infiniti</option>
+                                <option value="Jaguar">Jaguar</option>
+                                <option value="Jeep">Jeep</option>
+                                <option value="KIA">KIA</option>
+                                <option value="Land_Rover">Land Rover</option>
+                                <option value="Lexus">Lexus</option>
+                                <option value="Maserati">Maserati</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                <option value="MINI">MINI</option>
+                                <option value="Mitsubishi">Mitsubishi</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Pontiac">Pontiac</option>
+                                <option value="Porsche">Porsche</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Scion iM">Scion iM</option>
+                                <option value="Skoda">Skoda</option>
+                                <option value="Smart">Smart</option>
+                                <option value="SsangYong">SsangYong</option>
+                                <option value="Subaru">Subaru</option>
+                                <option value="Suzuki">Suzuki </option>
+                                <option value="Tesla">Tesla</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Volvo">Volvo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Країна виробника:</div>
+                        <div class="filter-value">
+                            <select name="country_of_manufacture" class="filter-value__country_of_manufacture">
+                                <option value="Будь-яка">Будь-яка</option>
+                                <option value="Німечина">Німечина</option>
+                                <option value="Японія">Японія</option>
+                                <option value="Китай">Китай </option>
+                                <option value="Франція">Франція</option>
+                                <option value="Америка">Америка</option>
+                                <option value="Італія">Італія</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="filter-item">
+                        <div class="filter-title">Ціна:</div>
+                        <div class="filter-value">
+                            <select name="price_from" class="filter-value__money">
+                                <option value="від">від</option>
+                                <option value="1000">1000$</option>
+                                <option value="2000">2000$</option>
+                                <option value="3000">3000$</option>
+                                <option value="4000">4000$</option>
+                                <option value="5000">5000$</option>
+                                <option value="6000">6000$</option>
+                                <option value="7000">7000$</option>
+                                <option value="8000">8000$</option>
+                                <option value="9000">9000$</option>
+                                <option value="10000">10000$</option>
+                                <option value="11000">11000$</option>
+                                <option value="12000">12000$</option>
+                                <option value="13000">13000$</option>
+                                <option value="14000">14000$</option>
+                                <option value="15000">15000$</option>
+                                <option value="16000">16000$</option>
+                                <option value="17000">17000$</option>
+                                <option value="18000">18000$</option>
+                                <option value="19000">19000$</option>
+                                <option value="20000">20000$</option>
+                                <option value="25000">25000$</option>
+                                <option value="30000">30000$</option>
+                                <option value="35000">35000$</option>
+                                <option value="40000">40000$</option>
+                                <option value="45000">45000$</option>
+                                <option value="50000">50000$</option>
+                                <option value="55000">55000$</option>
+                                <option value="60000">60000$</option>
+                                <option value="65000">65000$</option>
+                                <option value="70000">70000$</option>
+                                <option value="75000">75000$</option>
+                                <option value="80000">80000$</option>
+                                <option value="85000">85000$</option>
+                                <option value="90000">90000$</option>
+                                <option value="95000">95000$</option>
+                                <option value="100000">100000$</option>
+                            </select>
+                            <select name="price_to" class="filter-value__money">
+                                <option value="до">до</option>
+                                <option value="1000">1000$</option>
+                                <option value="2000">2000$</option>
+                                <option value="3000">3000$</option>
+                                <option value="4000">4000$</option>
+                                <option value="5000">5000$</option>
+                                <option value="6000">6000$</option>
+                                <option value="7000">7000$</option>
+                                <option value="8000">8000$</option>
+                                <option value="9000">9000$</option>
+                                <option value="10000">10000$</option>
+                                <option value="11000">11000$</option>
+                                <option value="12000">12000$</option>
+                                <option value="13000">13000$</option>
+                                <option value="14000">14000$</option>
+                                <option value="15000">15000$</option>
+                                <option value="16000">16000$</option>
+                                <option value="17000">17000$</option>
+                                <option value="18000">18000$</option>
+                                <option value="19000">19000$</option>
+                                <option value="20000">20000$</option>
+                                <option value="25000">25000$</option>
+                                <option value="30000">30000$</option>
+                                <option value="35000">35000$</option>
+                                <option value="40000">40000$</option>
+                                <option value="45000">45000$</option>
+                                <option value="50000">50000$</option>
+                                <option value="55000">55000$</option>
+                                <option value="60000">60000$</option>
+                                <option value="65000">65000$</option>
+                                <option value="70000">70000$</option>
+                                <option value="75000">75000$</option>
+                                <option value="80000">80000$</option>
+                                <option value="85000">85000$</option>
+                                <option value="90000">90000$</option>
+                                <option value="95000">95000$</option>
+                                <option value="100000">100000$</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Рік випуску:</div>
+                        <div class="filter-value">
+                            <select name="year_from" class="filter-value__year">
+                                <option value="від">від</option>
+                                <option value="2002">2002</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            <select name="year_to" class="filter-value__year">
+                                <option value="по">по</option>
+                                <option value="2002">2002</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Стан:</div>
+                        <div class="filter-value">
+                            <select name="state[]" multiple class="filter-value__state">
+                                <option value="Будь-яка">Будь-який</option>
+                                <option value="Бита">Бита</option>
+                                <option value="У кредиті">У кредиті</option>
+                                <option value="Нерозмитнена">Нерозмитнена </option>
+                            </select>
+                        </div>
+                    </div>    
+                    <div class="filter-item">
+                        <div class="filter-title">Тип топлива:</div>
+                        <div class="filter-value">
+                            <select name="gas_tipe" class="filter-value__gas">
+                                <option value="Будь-який">Будь-який</option>
+                                <option value="Бензин">Бензин</option>
+                                <option value="Бензин_Газ">Бензин /  Газ</option>
+                                <option value="Газ">Газ</option>
+                                <option value="Гібрид">Гібрид</option>
+                                <option value="Дизель">Дизель</option>
+                                <option value="Електро">Електро</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Коробка передач:</div>
+                        <div class="filter-value">
+                            <select name="gear_box" class="filter-value__box">
+                                <option value="Будь-яка">Будь-яка</option>
+                                <option value="Автомат">Автомат</option>
+                                <option value="Механіка">Механіка</option>
+                                <option value="Автомат+Секвентальна">Автомат + Секвентальна</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Колір:</div>
+                        <div class="filter-value">
+                            <select name="color" class="filter-value__color">
+                                <option value="Будь-який">Будь-який</option>
+                                <option value="Зелений">Зелений</option>
+                                <option value="Синій">Синій</option>
+                                <option value="Чорний">Чорний</option>
+                                <option value="Червоний">Червоний</option>
+                                <option value="Фіолетовий">Фіолетовий</option>
+                                <option value="Салатовий">Салатовий</option>
+                                <option value="Помаранчевий">Помаранчевий</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Комфорт:</div>
+                        <div class="filter-value">
+                            <select name="сomfort" class="filter-value__сomfort">
+                                <option value="Будь-який">Будь-який</option>
+                                <option value="Люк">Люк</option>
+                                <option value="Шкіряний салон">Шкіряний салон</option>
+                                <option value="Доводчики скла">Доводчики скла</option>
+                                <option value="Датчики дощу">Датчики дощу</option>
+                                <option value="Підігрів дзеркал">Підігрів дзеркал</option>
+                                <option value="Клімат контроль">Клімат контроль</option>
+                                <option value="Підігрів сидінь">Підігрів сидінь</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="filter__submit">
+                    <input type="submit" class="find" value="Знайти">
+                </div>
+			</form>
+        </div>
+    </div>
+</body>
+</html>

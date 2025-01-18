@@ -1,0 +1,239 @@
+@import "./common/classes";
+@import "./common/mixins";
+@import "./common/reset";
+@import "./common/typography";
+
+@import "./presets/skin";
+@import "./presets/variables";
+
+@import "./components/footer";
+@import "./components/header";
+@import "./components/main";
+
+// @media (min-width: 375px) {
+//   .header {
+//     width: 375px;
+//     height: 642px;
+//     &__navbar {
+//       position: absolute;
+//       width: 335px;
+//       height: 38px;
+//       top: 17px;
+//       left: 20px;
+//       gap: 171px;
+//     }
+//     &__list {
+//       display: none;
+//     }
+//     &__container { 
+//       position: absolute;
+//       display: flex;
+//       width: 335px;
+//       height: 514.61px;
+//       top: 87px;
+//       left: 20px;
+//       gap: 30px;
+
+//     } 
+//     &__body {
+//       position: absolute;
+//       width: 335px;
+//       height: 288px;
+//       gap: 25px;
+
+//     }
+//     &__picture {
+//       position: absolute;
+//     }
+//     img {
+//       width: 335px;
+//       height: 196.61px;
+//     }
+//     &__message {
+//       flex-direction: column;
+//     }
+//   }
+//   .main {
+//     width: 375px;
+//     &__partner {
+//       position: absolute;
+//       width: 335px;
+//       height: 711.45px;
+//       top: 664px;
+//       left: 20px;
+//       gap: 55px;
+//       display: flex;
+//       flex-direction: column;
+//     }
+//     &__message {
+//       width: 100%;
+//       flex-direction: column;
+//     }
+//     &__security {
+//       width: 100%;
+//       flex-direction: column;
+//     }
+//     &__cards {
+//       position: absolute;
+//       display: block;
+//     }
+//     &__team {
+//       width: 100%;
+//       flex-direction: column;
+//     }
+//     &__partner {
+//       position: absolute;
+//       width: 335px;
+//       height: 711.45px;
+//       top: 664px;
+//       left: 20px;
+//       gap: 55px;
+//     }
+//     &__partners {
+//       position: absolute;
+//       width: 200px;
+//       height: 386.45px;
+//       gap: 40px;
+//       display: flex;
+//       flex-direction: column;
+//     }
+//     &__body {
+//       position: absolute;
+//       width: 335px;
+//       height: 167px;
+//       gap: 16px;
+
+//     }
+//   }
+//   .footer {
+//     width: 375px;
+//     width: 100%;
+//     flex-direction: column;
+//   }
+
+// }
+
+// @media (max-width: 1023px) {
+//   .header {
+//     max-width: 1023px;  
+//   &__container { 
+//     left: 130px;
+//   }
+//   &__message {
+//     left: 130px;
+//   }
+//   }
+//   .main {
+//     &__partner {
+//     left: 141px;
+//     }
+//     &__message {
+//     left: 130px;
+//     }
+//   }
+//   .footer {
+//     max-width: 1023px;
+//   }
+// }
+                
+@media (min-width: 1024px) {
+  .header {
+    min-width: 1310px;
+    &__container { 
+      left: 78px;
+    }
+    &__message {
+      left: 130px;
+    }
+  }
+  .main {
+    min-width: 1310px;
+    &__partner {
+      left: 87px;
+    }
+    &__message {
+      left: 87px;
+    }
+    &__security {
+      left: 87px;
+    }
+    &__team {
+      left: 87px;
+    }
+  }
+  .footer {
+    min-width: 1310px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    min-width: 1310px;
+    &__container { 
+      left: 130px;
+    }
+    &__message {
+      left: 130px;
+    }
+  }
+  .main {
+    min-width: 1310px;
+    &__partner {
+      left: 141px;
+    }
+    &__message {
+      left: 130px;
+    }
+  }
+  .footer {
+    min-width: 1310px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    min-width: 1440px;
+    // &__navbar {
+    //   left: 110px;
+    // }
+    &__container { 
+      left: 141px;
+    }
+    &__list {
+      display: flex;
+    }
+  }
+  .main {
+    &__team,
+    &__security,
+    &__message,
+    &__partner {
+      left: 141px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .header {
+    min-width: 1600px;
+    min-height: 586px;
+
+    // &__navbar {
+    //   left: 110px;
+    // }
+    &__container { 
+      left: 250px;
+    }
+    &__list {
+      display: flex;
+    }
+  }
+  .main {
+    &__team,
+    &__security,
+    &__message,
+    &__partner {
+      left: 250px;
+    }
+  }
+}
