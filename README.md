@@ -1,4 +1,4 @@
-# Home work 17
+
 ## Данний проек був зверстанний з фігми:
 ##### https://www.figma.com/design/0vOZIzxMPT7BiqT5LLdILG/Responsive-Startup-Website-(Community)?node-id=9-12&t=nFU77b9EAuDbPI6A-0
 
